@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.sampleproject">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/festive_icon"
+        android:label="Festive"
+        android:roundIcon="@mipmap/festive_icon_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme.NoActionBar">
+        <activity android:name=".voditelj.VoditeljLicIzv"></activity>
+        <activity android:name=".izvodac.ZavrsenaLicitacija" />
+        <activity android:name=".izvodac.IzvodacIzvana" />
+        <activity android:name=".izvodac.Ponuda" />
+        <activity android:name=".organizator.OrganizatorIzvana" />
+        <activity android:name=".voditelj.PrikazOrganizatora" />
+        <activity android:name=".voditelj.VodLicitAdapter" />
+        <activity android:name=".organizator.LicitAdapter" />
+        <activity android:name=".SettingsActivity" />
+        <activity android:name=".common.Propusnica" />
+        <activity android:name=".authentication.AdminActivity" />
+        <activity android:name=".common.PrikazIzvodaca" />
+        <activity
+            android:name=".LicitacijaPrijavaActivity"
+            android:parentActivityName=".izvodac.IzvodacActivity" />
+        <activity android:name=".izvodac.IzvodacActivity" />
+        <activity android:name=".authentication.OdabirActivity" />
+        <activity android:name=".organizator.OrganizatorPoslovi" />
+        <activity android:name=".voditelj.NoviDogadajActivity" />
+        <activity android:name=".authentication.RegistracijaActivity" />
+        <activity android:name=".voditelj.FestivalActivity" />
+        <activity android:name=".voditelj.NoviFestivalActivity" />
+        <activity android:name=".voditelj.VoditeljActivity" />
+        <activity android:name=".organizator.OrganizatorActivity" />
+        <activity android:name=".authentication.MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

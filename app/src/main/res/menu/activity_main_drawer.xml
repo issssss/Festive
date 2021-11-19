@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/nav_propusnica"
+            android:icon="@drawable/ic_prop"
+            android:title="@string/menu_prop" />
+
+        <item
+            android:id="@+id/nav_postavke"
+            android:icon="@drawable/ic_postavke"
+            android:title="@string/menu_postavke" />
+    </group>
+
+    <item android:title="Dosta ti je?">
+        <menu>
+            <item
+                android:id="@+id/sign_out"
+                android:icon="@drawable/ic_sign_out"
+                android:title="@string/sign_out"
+                />
+
+        </menu>
+    </item>
+
+</menu>

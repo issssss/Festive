@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".voditelj.VoditeljActivity">
+
+    <!-- Do sad napravljen layout premjesten je u voditelj_home.xml
+         Za svaki novi prozor napravi se novi fragment- novi xml layout
+         i novi java.class koji nasljeduje Fragment (NE NOVI ACTIVITY) -->
+
+    <FrameLayout
+        android:id="@+id/voditelj_fragment_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/meni_voditelj"/>
+
+    <!-- Izgled gumba i njihov naziv podesava se u menu/voditelj_footer.xml -->
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/meni_voditelj"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        app:menu="@menu/voditelj_footer"
+        android:background="@color/colorFooter"
+        app:itemIconTint="@color/colorWhite"
+        app:itemTextColor="@color/colorWhite"/>
+
+</RelativeLayout>

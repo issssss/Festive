@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".common.Propusnica"
+    android:padding="20dp">
+
+    <RelativeLayout
+        android:id="@+id/iskaznica"
+        android:layout_width="266dp"
+        android:layout_height="380dp"
+        android:background="@drawable/qrorg_001"
+        android:padding="20dp"
+        android:layout_centerHorizontal="true"
+        >
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/slot1">
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:src="@mipmap/ic_launcher_round"
+                android:id="@+id/logo"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_alignParentLeft="true"
+                />
+            <TextView
+                android:text="Festival"
+                android:textAlignment="center"
+                android:textSize="20dp"
+                android:textColor="#ffff"
+                android:id="@+id/festival"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_toRightOf="@id/logo"
+                />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/slot2"
+            android:layout_below="@id/slot1"
+            android:layout_marginTop="10dp">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/profilna"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_alignParentLeft="true"
+                android:src="@mipmap/ic_launcher"
+                />
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/podaci"
+                android:layout_centerVertical="true"
+                android:paddingHorizontal="20dp"
+
+                android:layout_toRightOf="@id/profilna">
+                <TextView
+                    android:text="Ime"
+                    android:textAlignment="center"
+                    android:textSize="17dp"
+                    android:textColor="#ffff"
+                    android:id="@+id/ime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    />
+                <TextView
+                    android:text="Prezime"
+                    android:textAlignment="center"
+
+                    android:textSize="17dp"
+                    android:textColor="#ffff"
+                    android:id="@+id/prezime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/ime"
+                    />
+            </RelativeLayout>
+        </RelativeLayout>
+        <ImageView
+            android:id="@+id/qrcode"
+            android:layout_marginTop="20dp"
+            android:layout_width="180dp"
+            android:layout_height="180dp"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/slot2"
+            />
+    </RelativeLayout>
+    <Button
+        android:id="@+id/save"
+        android:text="SPREMI"
+        android:textSize="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/iskaznica"
+        android:layout_centerHorizontal="true"
+
+        />
+
+
+</RelativeLayout>

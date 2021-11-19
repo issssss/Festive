@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".organizator.OrganizatorActivity">
+
+    <!-- Do sad napravljen layout premjesten je u organizator_home.xml
+         Za svaki novi prozor napravi se novi fragment- novi xml layout
+         i novi java.class koji nasljeduje Fragment (NE NOVI ACTIVITY) -->
+
+    <FrameLayout
+        android:id="@+id/organizator_fragment_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/menu_organizator"/>
+
+    <!-- Izgled gumba i njihov naziv podesava se u menu/organizator_footer.xml -->
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/menu_organizator"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        app:menu="@menu/organizator_footer"
+        android:background="@color/colorFooter"
+        app:itemIconTint="@color/colorWhite"
+        app:itemTextColor="@color/colorWhite"/>
+
+</RelativeLayout>

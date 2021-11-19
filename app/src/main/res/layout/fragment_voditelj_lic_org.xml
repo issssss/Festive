@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <TextView
+            android:id="@+id/licitacijeOrg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="15dp"
+            android:text="Dostupne licitacije"
+            android:textColorHighlight="#000000"
+            android:textSize="21sp" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/popisLicitacija"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/licitacijeOrg"
+            android:layout_marginTop="5dp"
+            android:padding="4dp"
+            android:scrollbars="vertical" />
+
+
+
+    </RelativeLayout>
+
+</ScrollView>

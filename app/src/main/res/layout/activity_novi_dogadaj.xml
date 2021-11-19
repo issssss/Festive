@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+    /*activity_novi_dogadaj.xml*/
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="15dp">
+        <EditText
+            android:id="@+id/nazivText"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="20dp"
+            android:hint="Ime događaja"
+            />
+
+        <EditText
+            android:id="@+id/opisText"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@id/nazivText"
+            android:hint="Opis"
+            android:layout_marginTop="20dp"
+            />
+        <EditText
+            android:id="@+id/prostorText"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@id/opisText"
+            android:hint="Prostorija"
+            android:layout_marginTop="20dp"
+            />
+        <EditText
+            android:id="@+id/datumText"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@id/prostorText"
+            android:hint="Datum održavanja"
+            android:layout_marginTop="20dp"
+            />
+        <EditText
+            android:id="@+id/pocetakText"
+            android:layout_width="155sp"
+            android:layout_height="50dp"
+            android:layout_below="@id/datumText"
+            android:hint="Vrijeme početka"
+            android:layout_marginTop="20dp"
+            android:layout_alignParentLeft="true"
+
+            />
+        <EditText
+            android:id="@+id/krajText"
+            android:layout_width="155sp"
+            android:layout_height="50dp"
+            android:layout_below="@id/datumText"
+            android:hint="Vrijeme kraja"
+            android:layout_marginTop="20dp"
+            android:layout_alignParentRight="true"
+            />
+
+
+
+
+
+        <Button
+            android:id="@+id/spremiBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/krajText"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:text="Spremi događaj"
+            android:textSize="18sp"
+
+            />
+        <Button
+            android:id="@+id/backBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Vrati se"
+            android:layout_below="@id/spremiBtn"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+
+            />
+    </RelativeLayout>
+</ScrollView>

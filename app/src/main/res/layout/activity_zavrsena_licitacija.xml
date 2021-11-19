@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="20dp"
+    android:id="@+id/parent_layout"
+
+    >
+
+    <TextView
+        android:id="@+id/info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Info"
+        android:textSize="30dp" />
+
+    <TextView
+        android:id="@+id/izvodac"
+        android:layout_marginTop="15dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/info"
+        android:text="Izvodac"
+        android:textSize="25dp"
+        />
+
+
+    <TextView
+        android:id="@+id/cijena"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/izvodac"
+        android:text="200"
+        android:textSize="25dp"
+        />
+
+    <TextView
+        android:id="@+id/trajanje"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/cijena"
+        android:text="4"
+        android:textSize="25dp"
+        />
+    <TextView
+        android:id="@+id/brOsoba"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/trajanje"
+        android:text="5"
+        android:textSize="25dp"
+        />
+    <TextView
+        android:id="@+id/komentar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/brOsoba"
+        android:text="Komentar"
+        android:textSize="25dp"
+        />
+    <Button
+        android:id="@+id/odiNaProfil"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/komentar"
+        android:text="Odi na profil"
+        android:textSize="15dp"
+         />
+</RelativeLayout>

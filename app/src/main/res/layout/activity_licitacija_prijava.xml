@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".LicitacijaPrijavaActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <ImageView
+            android:id="@+id/image_activity2"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentTop="true"/>
+
+        <TextView
+            android:id="@+id/text1_activity2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/image_activity2"
+            android:layout_marginTop="5dp"
+            android:text="Ime festivala"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/text2_activity2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/text1_activity2"
+            android:layout_marginTop="5dp"
+            android:text="Trazeni posao"
+            android:textSize="30sp" />
+
+        <TextView
+            android:id="@+id/dodatniOpis"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/text2_activity2"
+            android:text="Ovdje moze doci neki opis trazenog posla i festivala"
+            android:layout_marginTop="18dp"/>
+
+        <TextView
+            android:id="@+id/ponudaCijene"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/dodatniOpis"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginLeft="50dp"
+            android:layout_marginStart="50dp"
+            android:layout_marginTop="20dp"
+            android:text="Ponuda cijene:"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/editPonudaCijene"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ponudaCijene"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="50dp"
+            android:layout_marginEnd="50dp"
+            android:layout_alignParentEnd="true"
+            android:ems="10"
+            android:inputType="number"
+            />
+
+        <TextView
+            android:id="@+id/brPotrebnihOsoba"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/editPonudaCijene"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="15dp"
+            android:text="Broj potrebnih osoba:"
+            android:textSize="18sp"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="50dp" />
+
+        <EditText
+            android:id="@+id/editBrPotrebnihOsoba"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/brPotrebnihOsoba"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="50dp"
+            android:layout_marginEnd="50dp"
+            android:layout_alignParentEnd="true"
+            android:ems="10"
+            android:inputType="number" />
+
+        <TextView
+            android:id="@+id/procijenaTrajanja"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/editBrPotrebnihOsoba"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="15dp"
+            android:text="Procijena trajanja:"
+            android:textSize="18sp"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="50dp" />
+
+        <EditText
+            android:id="@+id/editProcijenaTrajanja"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/procijenaTrajanja"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="50dp"
+            android:layout_marginEnd="50dp"
+            android:layout_alignParentEnd="true"
+            android:ems="10"
+            android:inputType="number" />
+
+        <TextView
+            android:id="@+id/komentar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/editProcijenaTrajanja"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="15dp"
+            android:text="Komentar"
+            android:textSize="18sp"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="50dp" />
+
+
+        <EditText
+            android:id="@+id/editKomentar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/komentar"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="50dp"
+            android:layout_marginEnd="50dp"
+            android:layout_alignParentEnd="true"
+            android:ems="10"
+            android:gravity="start|top"
+            android:inputType="textMultiLine" />
+
+        <Button
+            android:id="@+id/posaljiPonudu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/editKomentar"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="50dp"
+            android:layout_centerHorizontal="true"
+            android:text="Pošalji ponudu" />
+
+    </RelativeLayout>
+
+</ScrollView>
+

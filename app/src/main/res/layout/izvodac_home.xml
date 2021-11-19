@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/imageBackground"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:layout_alignParentTop="true"
+            android:background="@color/colorPrimary" />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/profileImage"
+            android:layout_width="125dp"
+            android:layout_height="125dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="40dp"
+            android:src="@drawable/profile_image" />
+
+        <TextView
+            android:id="@+id/imePrezime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/profileImage"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="15dp"
+            android:text="Ime Prezime"
+            android:textColor="@color/colorWhite"
+            android:textColorHighlight="#000000"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <TextView
+        android:id="@+id/mojeSpecijalizacije"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imageBackground"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:text="Specijalizacije"
+        android:textColorHighlight="#000000"
+        android:textSize="21sp" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/popisSpecijalizacija"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/mojeSpecijalizacije"
+            android:layout_marginTop="5dp"
+            android:padding="4dp"
+            android:scrollbars="vertical" />
+
+        <TextView
+            android:id="@+id/obavljeniPoslovi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/popisSpecijalizacija"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="15dp"
+            android:text="Obavljeni poslovi"
+            android:textColorHighlight="#000000"
+            android:textSize="21sp" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/popisObavljenihPoslova"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/obavljeniPoslovi"
+            android:layout_marginTop="5dp"
+            android:padding="4dp"
+            android:scrollbars="vertical" />
+
+        <TextView
+            android:id="@+id/mojiKomentari"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/popisObavljenihPoslova"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="15dp"
+            android:text="Komentari"
+            android:textColorHighlight="#000000"
+            android:textSize="21sp" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/popisKomentara"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/mojiKomentari"
+            android:layout_marginTop="5dp"
+            android:padding="4dp"
+            android:scrollbars="vertical" />
+
+
+    </RelativeLayout>
+
+</ScrollView>

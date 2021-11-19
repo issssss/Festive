@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/nav_home"
+        android:icon="@drawable/ic_home"
+        android:title="Početna"/>
+
+    <item
+        android:id="@+id/nav_festivals"
+        android:icon="@drawable/ic_new"
+        android:title="Festivali" />
+
+    <item
+        android:id="@+id/nav_events"
+        android:icon="@drawable/ic_build"
+        android:title="Moji događaji" />
+
+    <item
+        android:id="@+id/nav_calendar"
+        android:icon="@drawable/ic_calendar"
+        android:title="Kalendar" />
+
+</menu>
